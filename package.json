@@ -1,0 +1,25 @@
+{
+  "name": "netzero",
+  "version": "1.0.0",
+  "description": "An AI-powered carbon-footprint calculator and sustainability advisor.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node --check app.js && node --check routes/aiRoutes.js && node --check rag/ragService.js",
+    "ingest": "node rag/ingest.js"
+  },
+  "author": "Yuvraj Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcrypt": "^5.1.1",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.6.1",
+    "ejs": "^3.1.10",
+    "express": "^4.22.2",
+    "express-session": "^1.19.0",
+    "mongoose": "^8.24.4",
+    "path": "^0.12.7",
+    "stripe": "^14.25.0"
+  }
+}
